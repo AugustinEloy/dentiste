@@ -335,36 +335,91 @@ h2 {
   margin-top: 3%;
 }
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 5%;
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    display: none; 
-  }
-  /****************************************** A propos de nous ********************************************/
-  about-container {
+  /* NAVBAR simplifiée */
+  .navbar {
     flex-direction: column;
     align-items: center;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  /* A PROPOS DE NOUS */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
   }
 
   .text-content {
     max-width: 100%;
-    padding-right: 0;
     text-align: center;
+    padding: 1rem 0;
   }
 
   .image-content {
     max-width: 100%;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .imgd {
-    width: 80%;
+    width: 90%;
+    max-width: 300px;
     height: auto;
+  }
+
+  /* SERVICES */
+  .services-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  /* LOCALISATION */
+  .localisation-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .localisation-image {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .localisation-info {
+    width: 90%;
+    text-align: center;
+  }
+
+  .localisation-map {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* CONTACT */
+  .contact-footer {
+    padding: 2rem 1rem;
+  }
+
+  .form-container {
+    padding: 1rem;
   }
 }
