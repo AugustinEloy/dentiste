@@ -1,38 +1,370 @@
-.App {
+body {
+  font-family: 'IBM Plex Serif', serif;
+}
+footer{
+  font-family: 'IBM Plex Serif', serif;
+}
+h2{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 100vw; 
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2F855A;
+  margin-left: 3%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding-right: 3%;
+}
+.nav-links button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #2F855A;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-links button:hover {
+  text-decoration: underline;
+}
+
+
+/*******************************************************Headder.js****************************/
+header {
+  margin-top: 15vh;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+/******************************Logo*******************************************/
+.logo-wrapper {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.logo-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.logo-underline {
+  width: 100%;
+  height: 6px;
+  background-color: #28a745; 
+  margin-top: -5px;
+}
+
+
+/********************************************** A propos de nous*****************************/
+.about-us {
+  padding: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #28a745;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 2rem; 
+  text-align: left;
+}
+
+.image-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.imgd {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+/********************************Contact.js **************************/
+.contact-footer {
+  background: linear-gradient(to right, #adadad, #888);
+  padding: 4rem 1rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.contact-wrapper {
+  width: 80%;
+  max-width: 800px;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.1); /* Optionnel : léger fond semi-transparent */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container form {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-container label {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.form-container input,
+.form-container textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-container textarea {
+  min-height: 120px;
+}
+
+.form-container button {
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #2F855A;
+  border: 2px solid #2F855A;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+
+
+
+/********************************************Services.js*******************************************/
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #2F855A;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #2F855A;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.card {
+  flex: 1;
+  max-width: 300px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/************************************Localisation.js***************************/
+.localisation-container {
+  display: flex;
+  flex-direction: column; 
+  padding: 2rem;
+  text-align: center;
+}
+
+.localisation-header {
+  margin-bottom: 2rem;
+}
+
+.localisation-header h2 {
+  font-size: 2rem;
+  color: #28a745;
+}
+
+.localisation-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.localisation-image {
+  flex: 1;
+  max-width: 30%;
+  height: auto;
+}
+
+.localisation-info {
+  flex: 1;
+  max-width: 45%;
+  text-align: left;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.localisation-map {
+  width: 100%;
+  height: 400px;
+  margin-top: 3%;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: none; 
   }
-  to {
-    transform: rotate(360deg);
+  /****************************************** A propos de nous ********************************************/
+  about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .image-content {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .imgd {
+    width: 80%;
+    height: auto;
   }
 }
