@@ -20,7 +20,7 @@ function App() {
   const scrollToSection = (section) => {
     if (section === 'home') homeRef.current?.scrollIntoView({ behavior: 'smooth' });
     if (section === 'about') aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
-    if (section === 'services') aboutRef.current?.scrollIntoView({ behavior: 'smooth'})
+    if (section === 'services') servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
     if (section === 'contact') contactRef.current?.scrollIntoView({ behavior: 'smooth' });
     if (section === 'localisation') localisationRef.current?.scrollIntoView({ behavior: 'smooth' }); 
   };
