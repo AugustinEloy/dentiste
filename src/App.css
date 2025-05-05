@@ -337,35 +337,33 @@ h2 {
 @media (max-width: 768px) {
   /* NAVBAR */
   .navbar {
-    flex-direction: row; /* Assurer que la navbar soit toujours horizontale */
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    padding: 1rem 3%;
-  }
-
-  .nav-links {
-    flex-direction: row; /* Les liens restent horizontaux */
-    gap: 1.5rem;
-    padding: 0;
-  }
-
-  .nav-links li {
-    margin: 0;
+    flex-wrap: nowrap; 
+    padding: 0 1rem;
   }
 
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2F855A;
-    margin: 0;
+    flex-shrink: 0;
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: flex-end;
+    gap: 0.8rem;
+    overflow-x: auto; 
+    padding-left: 1rem;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none; 
   }
 
   .nav-links button {
-    font-size: 1rem;
-    color: #2F855A;
-    font-weight: 500;
-    cursor: pointer;
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 
   .nav-links button:hover {
