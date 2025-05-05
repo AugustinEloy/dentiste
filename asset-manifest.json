@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dentiste/static/css/main.76db33aa.css",
+    "main.css": "/dentiste/static/css/main.f6fd7f66.css",
     "main.js": "/dentiste/static/js/main.2680f3ab.js",
     "static/js/453.283dea91.chunk.js": "/dentiste/static/js/453.283dea91.chunk.js",
     "static/media/localisation.jpg": "/dentiste/static/media/localisation.2e325ae35d8f1e10019c.jpg",
@@ -13,12 +13,12 @@
     "static/media/slick.ttf": "/dentiste/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/dentiste/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/dentiste/index.html",
-    "main.76db33aa.css.map": "/dentiste/static/css/main.76db33aa.css.map",
+    "main.f6fd7f66.css.map": "/dentiste/static/css/main.f6fd7f66.css.map",
     "main.2680f3ab.js.map": "/dentiste/static/js/main.2680f3ab.js.map",
     "453.283dea91.chunk.js.map": "/dentiste/static/js/453.283dea91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76db33aa.css",
+    "static/css/main.f6fd7f66.css",
     "static/js/main.2680f3ab.js"
   ]
 }
