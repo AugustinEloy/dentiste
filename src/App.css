@@ -339,13 +339,16 @@ h2 {
   .navbar {
     flex-wrap: nowrap;
     padding: 0 1rem;
-    height: 12vh; 
+    height: 12vh;
+    overflow-x: hidden;         /* empêche le scroll horizontal */
+    max-width: 100vw;           /* limite la largeur */
   }
 
   .logo {
     flex-shrink: 0;
-    font-size: 1.1rem; 
+    font-size: 0.9rem;          /* taille du logo réduite */
     white-space: nowrap;
+    margin-left: 1%;
   }
 
   .nav-links {
@@ -353,14 +356,23 @@ h2 {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     flex-wrap: nowrap;
+    padding-right: 1%;
   }
 
   .nav-links button {
-    font-size: 0.8rem; 
-    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;         /* police plus petite */
+    padding: 0.3rem 0.4rem;
+    max-width: 90px;            /* évite que les textes s’étalent trop */
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
+    color: #2F855A;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   .nav-links button:hover {
@@ -436,4 +448,5 @@ h2 {
     padding: 1rem;
   }
 }
+
 
