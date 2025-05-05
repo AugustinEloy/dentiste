@@ -335,23 +335,41 @@ h2 {
   margin-top: 3%;
 }
 @media (max-width: 768px) {
-  /* NAVBAR simplifiée */
+  /* NAVBAR */
   .navbar {
-    flex-direction: column;
+    flex-direction: row; /* Assurer que la navbar soit toujours horizontale */
+    justify-content: space-between;
     align-items: center;
     height: auto;
-    padding: 1rem;
-    text-align: center;
+    padding: 1rem 3%;
   }
 
   .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row; /* Les liens restent horizontaux */
+    gap: 1.5rem;
     padding: 0;
   }
 
   .nav-links li {
-    margin: 0.5rem 0;
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2F855A;
+    margin: 0;
+  }
+
+  .nav-links button {
+    font-size: 1rem;
+    color: #2F855A;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .nav-links button:hover {
+    text-decoration: underline;
   }
 
   /* A PROPOS DE NOUS */
@@ -423,3 +441,4 @@ h2 {
     padding: 1rem;
   }
 }
+
