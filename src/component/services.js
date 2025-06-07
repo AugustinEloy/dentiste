@@ -1,7 +1,10 @@
 import React from 'react';
 import Card from '../component/card';
 import '../App.css';
-import { faTooth, faUserMd, faHeartbeat } from '@fortawesome/free-solid-svg-icons';
+import serv1 from '../asstes/service1.JPG'
+import serv2 from '../asstes/service2.JPG'
+import serv3 from '../asstes/service3.JPG'
+
 
 const Services = () => {
   return (
@@ -9,17 +12,17 @@ const Services = () => {
         <h2>Nos services</h2>
     <div className="services-section">
       <Card
-        icon={faTooth}
+        src={serv1}
         title="Dentisterie"
         description="Soins dentaires pour adultes et enfants."
       />
       <Card
-        icon={faUserMd}
+        src={serv2}
         title="Consultation"
         description="Consultations générales et spécialisées."
       />
       <Card
-        icon={faHeartbeat}
+        src={serv3}
         title="Suivi médical"
         description="Suivi régulier de votre santé."
       />

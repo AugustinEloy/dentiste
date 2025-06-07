@@ -7,7 +7,7 @@ import '../App.css';
 const Localisation = () => {
   return (
     <section className="localisation-container">
-      {/* Titre Localisation */}
+
       <div className="localisation-header">
         <h2>Localisation</h2>
       </div>
@@ -26,9 +26,9 @@ const Localisation = () => {
           <h3>Nous trouver facilement</h3>
           <p><FontAwesomeIcon icon={faPhone} /> 02 734 14 87</p>
           <p><FontAwesomeIcon icon={faEnvelope} /> teethfortous@gmail.com</p>
-          <h4>Horaires d’ouverture</h4>
+          <h4>Horaires d’ouverture: uniquement sur rendez-vous</h4>
           <p>Lundi - Vendredi : 9h à 18h</p>
-          <p>Samedi : sur rendez-vous</p>
+          <p>Samedi : 9h-15H</p>
         </div>
       </div>
 

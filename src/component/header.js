@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import photocarrousel1 from '../asstes/photocarrousel1.jpg';
 import photocarrousel2 from '../asstes/photo-caroussel2.jpg';
 import photocarrousel3 from '../asstes/photo-caroussel3.jpg';
+import photocarrousel4 from "../asstes/photocaroussel4.JPG"
 import '../App.css';
 
-const images = [photocarrousel1, photocarrousel2, photocarrousel3];
+const images = [photocarrousel1, photocarrousel2, photocarrousel3, photocarrousel4];
 
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

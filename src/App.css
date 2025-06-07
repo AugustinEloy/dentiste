@@ -28,6 +28,7 @@ h2{
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1000;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -40,6 +41,8 @@ h2{
 .nav-links {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 2rem;
   padding-right: 3%;
 }
@@ -250,8 +253,10 @@ h2 {
 }
 
 .card-icon {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
   font-size: 2.5rem;
-  color: #2F855A;
   margin-bottom: 1rem;
 }
 
@@ -337,70 +342,72 @@ h2 {
 @media (max-width: 768px) {
   /* NAVBAR */
   .navbar {
-    flex-wrap: nowrap;
-    padding: 0 1rem;
-    height: 12vh;
-    overflow-x: hidden;         /* empêche le scroll horizontal */
-    max-width: 100vw;           /* limite la largeur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0; /* supprimer padding latéral */
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .logo {
-    flex-shrink: 0;
-    font-size: 0.9rem;          /* taille du logo réduite */
-    white-space: nowrap;
-    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .nav-links {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-wrap: wrap; 
+    justify-content: center;
     align-items: center;
-    gap: 0.4rem;
-    flex-wrap: nowrap;
-    padding-right: 1%;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .nav-links button {
-    font-size: 0.75rem;         /* police plus petite */
-    padding: 0.3rem 0.4rem;
-    max-width: 90px;            /* évite que les textes s’étalent trop */
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
     white-space: nowrap;
-    color: #2F855A;
-    font-weight: 500;
     background: none;
     border: none;
-    cursor: pointer;
-  }
-
-  .nav-links button:hover {
-    text-decoration: underline;
+    margin: 0; 
   }
 
   /* A PROPOS DE NOUS */
   .about-container {
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 4%;
   }
 
   .text-content {
     max-width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    padding: 4% 0;
   }
 
   .image-content {
     max-width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 4%;
     text-align: center;
   }
 
   .imgd {
     width: 90%;
-    max-width: 300px;
+    max-width: 90%;
     height: auto;
   }
 
@@ -408,45 +415,49 @@ h2 {
   .services-section {
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 4%;
   }
 
   .card {
     width: 90%;
-    max-width: 300px;
-    margin-bottom: 1rem;
+    max-width: 90%;
+    margin-bottom: 4%;
   }
 
   /* LOCALISATION */
   .localisation-body {
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 4%;
   }
 
   .localisation-image {
     width: 90%;
-    max-width: 300px;
+    max-width: 90%;
   }
 
   .localisation-info {
-    width: 90%;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+}
 
   .localisation-map {
     width: 100%;
-    height: 250px;
+    height: 30vh;
   }
-
+  
   /* CONTACT */
   .contact-footer {
-    padding: 2rem 1rem;
+    padding: 8% 4%;
   }
 
   .form-container {
-    padding: 1rem;
-  }
+    padding: 4%;
+  } 
 }
-
-
