@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/dentiste/static/css/main.f6fd7f66.css",
-    "main.js": "/dentiste/static/js/main.2680f3ab.js",
+    "main.css": "/dentiste/static/css/main.f1b5c4d7.css",
+    "main.js": "/dentiste/static/js/main.fbc20226.js",
     "static/js/453.283dea91.chunk.js": "/dentiste/static/js/453.283dea91.chunk.js",
+    "static/media/service3.JPG": "/dentiste/static/media/service3.1e5926c25b7a602769f9.JPG",
     "static/media/localisation.jpg": "/dentiste/static/media/localisation.2e325ae35d8f1e10019c.jpg",
+    "static/media/service1.JPG": "/dentiste/static/media/service1.05ed88f94b03e2dbf16f.JPG",
+    "static/media/service2.JPG": "/dentiste/static/media/service2.2471b388925b65e0c957.JPG",
     "static/media/photo-caroussel3.jpg": "/dentiste/static/media/photo-caroussel3.8da53c229d94a64fb40a.jpg",
+    "static/media/photocaroussel4.JPG": "/dentiste/static/media/photocaroussel4.00fc5e2de8c694c00a64.JPG",
+    "static/media/photosev.JPG": "/dentiste/static/media/photosev.c564ff0a18423124727f.JPG",
     "static/media/photocarrousel1.jpg": "/dentiste/static/media/photocarrousel1.1e39aa7e6ae0eb53ca35.jpg",
-    "static/media/photoseverine.jpg": "/dentiste/static/media/photoseverine.138ee97921035cfea6d2.jpg",
     "static/media/photo-caroussel2.jpg": "/dentiste/static/media/photo-caroussel2.600c67dde5510f11d576.jpg",
     "static/media/slick.svg": "/dentiste/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/dentiste/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/dentiste/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/dentiste/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/dentiste/index.html",
-    "main.f6fd7f66.css.map": "/dentiste/static/css/main.f6fd7f66.css.map",
-    "main.2680f3ab.js.map": "/dentiste/static/js/main.2680f3ab.js.map",
+    "main.f1b5c4d7.css.map": "/dentiste/static/css/main.f1b5c4d7.css.map",
+    "main.fbc20226.js.map": "/dentiste/static/js/main.fbc20226.js.map",
     "453.283dea91.chunk.js.map": "/dentiste/static/js/453.283dea91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6fd7f66.css",
-    "static/js/main.2680f3ab.js"
+    "static/css/main.f1b5c4d7.css",
+    "static/js/main.fbc20226.js"
   ]
 }
