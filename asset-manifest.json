@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dentiste/static/css/main.f1b5c4d7.css",
-    "main.js": "/dentiste/static/js/main.98ba3fdc.js",
+    "main.js": "/dentiste/static/js/main.15699434.js",
     "static/js/453.283dea91.chunk.js": "/dentiste/static/js/453.283dea91.chunk.js",
     "static/media/service3.JPG": "/dentiste/static/media/service3.1e5926c25b7a602769f9.JPG",
     "static/media/localisation.jpg": "/dentiste/static/media/localisation.2e325ae35d8f1e10019c.jpg",
@@ -18,11 +18,11 @@
     "static/media/slick.woff": "/dentiste/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/dentiste/index.html",
     "main.f1b5c4d7.css.map": "/dentiste/static/css/main.f1b5c4d7.css.map",
-    "main.98ba3fdc.js.map": "/dentiste/static/js/main.98ba3fdc.js.map",
+    "main.15699434.js.map": "/dentiste/static/js/main.15699434.js.map",
     "453.283dea91.chunk.js.map": "/dentiste/static/js/453.283dea91.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1b5c4d7.css",
-    "static/js/main.98ba3fdc.js"
+    "static/js/main.15699434.js"
   ]
 }
